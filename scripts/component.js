@@ -5,9 +5,9 @@ class BaseLogic extends HTMLElement {
     static get observedAttributes() {
         return ["croco"]
     }
-    attributeChangedCallback(attrName, oldVal, newVal) {
-        this.querySelector("img").src = newVal
-    }
+    //attributeChangedCallback(attrName, oldVal, newVal) {
+    //   this.querySelector("img").src = newVal
+    //}
     connectedCallback() {
         Promise.all([
             fetch("../Chanks/chank1.html"),
