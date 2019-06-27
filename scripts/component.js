@@ -10,8 +10,8 @@ class BaseLogic extends HTMLElement {
     //}
     connectedCallback() {
         Promise.all([
-            fetch("../Chanks/chank1.html"),
-            fetch("../style/chank1.css")
+            fetch("https://shturmeman.github.io/web-component-practice/Chanks/chank1.html"),
+            fetch("https://shturmeman.github.io/web-component-practice/style/chank1.css")
         ])
             .then(response => Promise.all(response.map(item => item.text())))
             .then(response => {
